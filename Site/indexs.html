@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -84,6 +85,7 @@
     <section id="section2">
       <h2>Funkcijos</h2>
       <p>aaaaa</p>
+      <div id="ggb-element"></div>
     </section>
 
     <section id="section3">
@@ -99,6 +101,13 @@
 </footer>
     
 </body>
+<script>
+    var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
+    var applet = new GGBApplet(params, true);
+    window.addEventListener("load", function() {
+        applet.inject('ggb-element');
+    });
+</script>
 </html>
 
 
