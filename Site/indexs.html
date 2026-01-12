@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,39 +28,75 @@
   <main class="content">
 
     <h1>Funkcijos</h1>
+    <hr>
     <p class="subtitle">Medžiaga iš laisvosios enciklopedijos</p>
 
     <nav class="toc">
       <strong>Turinys</strong>
       <ol>
-        <li><a href="#section1">Įvadas</a></li>
-        <li><a href="#section2">Funkcijos</a></li>
-        <li><a href="#section3">Dar kas kas</a></li>
+        <li>
+            <a href="#section1">Įvadas</a>
+        </li>
+        <li>
+            <a href="#section2">Funkcijos</a>
+            <ol>
+                <li>
+                <a href="#section2-1">Tiesinės funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-2">Laipsninės funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-3">Šaknies funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-4">Rodiklinės funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-5">Logaritminės funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-6">Trigonometrinės funkcijos.</a>
+                </li>
+                <li>
+                <a href="#section2-7">Tangento funkcija.</a>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <a href="#section3">Dar kas kas</a>
+        </li>
       </ol>
     </nav>
 
-    <div class="infobox">
-      <strong>Turinys</strong>
-      <img src="img/Trigonometric_functions_no_legend.png" alt="img">
-      <p class="caption">Trigonometrinių funkcijų grafikai: <b style="color: red;">sinusas</b>, <b style="color: rgb(47, 255, 47);">kosinusas</b>, <b style="color: blue;">tangentas</b>, <b style="color: yellowgreen;">kotangentas</b>, <b style="color: rgb(131, 131, 0);">sekantas</b>, <b style="color: blueviolet;">kosekantas</b></p>
-    </div>
+
 
     <section id="section1">
       <h2>Įvadas</h2>
+      <hr>
+        <div class="infobox">
+            <strong>Funkcijos</strong>
+            <img src="img/Trigonometric_functions_no_legend.png" alt="img">
+            <p class="caption">Trigonometrinių funkcijų grafikai: <b style="color: red;">sinusas</b>, <b style="color: rgb(47, 255, 47);">kosinusas</b>, <b style="color: blue;">tangentas</b>, <b style="color: yellowgreen;">kotangentas</b>, <b style="color: rgb(131, 131, 0);">sekantas</b>, <b style="color: blueviolet;">kosekantas</b></p>
+        </div>
+
         <p>Trigonometrinės funkcijos yra elementarios funkcijos, istoriškai atsiradusios nagrinėjant stačiuosius trikampius ir išreiškusios šių trikampių kraštinių ilgių priklausomybę nuo smailiųjų kampų hipotenuzėje (arba, lygiaverčiai, chordų ir aukštinių priklausomybę nuo apskritimo lanko centrinio kampo). Šios funkcijos buvo plačiai pritaikytos įvairiose mokslo srityse. Tobulėjant matematikai, trigonometrinių funkcijų apibrėžimas buvo išplėstas; šiuolaikine prasme jų argumentas gali būti bet koks realusis arba kompleksinis skaičius.</p>
         <p>Matematikos šaka, tirianti trigonometrinių funkcijų savybes, vadinama trigonometrija.</p>
         <p>Be šių šešių gerai žinomų trigonometrinių funkcijų, literatūroje kartais vartojamos ir kelios mažiau žinomos trigonometrinės funkcijos (versinas ir kt.).</p>
         <p>Realaus skaičiaus argumento sinusas ir kosinusas yra periodinės, tolydžios ir be galo diferencijuojamos realiosios reikšmės funkcijos.</p>
+        <p>Likusios keturios realiųjų skaičių ašies funkcijos taip pat yra realiosios vertės, periodinės ir be galo diferencijuojamos, išskyrus suskaičiuojamą skaičių antros rūšies trūkių.</p>
     </section>
 
     <section id="section2">
       <h2>Funkcijos</h2>
+      <hr>
       <p>aaaaa</p>
       <div id="ggb-element"></div>
     </section>
 
     <section id="section3">
       <h2>Dar kas kas</h2>
+      <hr>
       <p>aaaaaaaa</p>
     </section>
 
@@ -71,15 +108,5 @@
 </footer>
     
 </body>
-<script>
-    var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
-    var applet = new GGBApplet(params, true);
-    window.addEventListener("load", function() {
-        applet.inject('ggb-element');
-    });
-</script>
 </html>
-
-
-
 
