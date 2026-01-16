@@ -14,7 +14,7 @@
 <body>
 
 <header class="top-bar">
-  <div class="logo">Funkcijos</div>
+  <div class="logo"><h1>Funkcijos</h1></div>
 </header>
 
 <div class="layout">
@@ -26,6 +26,23 @@
       <li><a href="https://github.com/MARKUHA-220/Site-project/issues">Pranešti apie klaidą</a></li>
       <li><a href="https://github.com/MARKUHA-220/Site-project">Github</a></li>
     </ul>
+    <br>
+    <br>
+    <h3>Išvaizda</h3>
+    <hr>
+    <p>Tekstas</p>
+      <ul>
+        <li>
+          <button onclick="changeTextSize(1)">A+</button>
+          <button onclick="changeTextSize(-1)">A−</button>
+        </li>
+      </ul>
+    <p>Spalva</p>
+      <ul>
+        <li>
+          <button onclick="toggleTheme()">Keisti temą</button>
+        </li>
+      </ul>
   </aside>
 
   <main class="content">
@@ -291,7 +308,7 @@
     <section id="section3">
       <h2>funkcijų skaičiuotuvas</h2>
       <hr>
-      
+
       <form id="form">
         <label for="eq">Įveskite lygtį:</label>
         <input type="text" id="eq" value="4 * sin(x) + 5 * cos(x/2)" />
