@@ -36,3 +36,20 @@ draw()
 }
 
 draw()
+
+  let currentFontSize = 16;
+
+  function changeTextSize(step) {
+    currentFontSize += step;
+    if (currentFontSize < 12) currentFontSize = 12;
+    if (currentFontSize > 24) currentFontSize = 24;
+
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+  }
+
+
+
