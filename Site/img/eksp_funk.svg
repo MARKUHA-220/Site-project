@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="-200 -150 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="-200" y1="0" x2="200" y2="0" stroke="black"></line>
+  <line x1="0" y1="-150" x2="0" y2="150" stroke="black"></line>
+
+  <!-- Exponential curve -->
+  <path d="
+    M -150 120
+    C -100 90, -50 60, 0 30
+    C 50 0, 100 -50, 150 -120
+  " fill="none" stroke="blue" stroke-width="2"></path>
+
+  <text x="80" y="-100" font-size="14">f(x)=2ˣ</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="-200 -150 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="-200" y1="0" x2="200" y2="0" stroke="black"></line>
+  <line x1="0" y1="-150" x2="0" y2="150" stroke="black"></line>
+
+  <!-- Logarithmic curve -->
+  <path d="
+    M 10 120
+    C 30 80, 60 40, 100 10
+    C 140 -20, 180 -40, 200 -60
+  " fill="none" stroke="green" stroke-width="2"></path>
+
+  <text x="60" y="-80" font-size="14">f(x)=log₂x</text>
+</svg>
