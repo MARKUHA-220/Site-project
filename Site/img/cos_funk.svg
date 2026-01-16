@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="-200 -150 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="-200" y1="0" x2="200" y2="0" stroke="black"></line>
+  <line x1="0" y1="-150" x2="0" y2="150" stroke="black"></line>
+
+  <!-- Cosine curve -->
+  <path d="
+    M -200 -80
+    C -150 -150, -50 -150, 0 -80
+    C 50 0, 150 0, 200 -80
+  " fill="none" stroke="purple" stroke-width="2"></path>
+
+  <text x="120" y="-120" font-size="14">f(x)=cos x</text>
+</svg>

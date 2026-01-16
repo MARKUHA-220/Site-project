@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="-200 -150 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="-200" y1="0" x2="200" y2="0" stroke="black"></line>
+  <line x1="0" y1="-150" x2="0" y2="150" stroke="black"></line>
+
+  <!-- Sine curve -->
+  <path d="
+    M -200 0
+    C -150 -80, -50 -80, 0 0
+    C 50 80, 150 80, 200 0
+  " fill="none" stroke="red" stroke-width="2"></path>
+
+  <text x="120" y="-100" font-size="14">f(x)=sin x</text>
+</svg>
