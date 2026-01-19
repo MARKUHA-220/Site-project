@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geogebra Kalkuliatorius</title>
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script src="script.js" defer></script>
-    <script src="graph.js" defer></script>
     <script src="https://unpkg.com/mathjs@15.1.0/lib/browser/math.js"></script>
     <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -40,7 +39,7 @@
       <ul>
         <li>
           <button onclick="changeTextSize(1)">A+</button>
-          <button onclick="changeTextSize(-1)">A−</button>
+          <button onclick="changeTextSize(-1)">A-</button>
         </li>
       </ul>
     <p>Spalva</p>
@@ -53,53 +52,26 @@
 
   <main class="content">
 
-    <h1>Funkcijos</h1>
+    <h1>Kalkuliatorius</h1>
     <hr>
     <p class="subtitle">Medžiaga iš laisvosios enciklopedijos</p>
 
-    
-
-
-
     <section id="section1">
-      <h2>Įvadas</h2>
-      <hr>
-        <div class="infobox" style="width: 30%;">
-            <strong>Funkcijos</strong>
-            <img src="img/Trigonometric_functions_no_legend.png" alt="img">
-            <p class="caption">Trigonometrinių funkcijų grafikai: <b style="color: red;">sinusas</b>, <b style="color: rgb(47, 255, 47);">kosinusas</b>, <b style="color: blue;">tangentas</b>, <b style="color: yellowgreen;">kotangentas</b>, <b style="color: rgb(131, 131, 0);">sekantas</b>, <b style="color: blueviolet;">kosekantas</b></p>
-        </div>
-
-        <p>Trigonometrinės funkcijos yra elementarios funkcijos, istoriškai atsiradusios nagrinėjant stačiuosius trikampius ir išreiškusios šių trikampių kraštinių ilgių priklausomybę nuo smailiųjų kampų hipotenuzėje (arba, lygiaverčiai, chordų ir aukštinių priklausomybę nuo apskritimo lanko centrinio kampo). Šios funkcijos buvo plačiai pritaikytos įvairiose mokslo srityse. Tobulėjant matematikai, trigonometrinių funkcijų apibrėžimas buvo išplėstas; šiuolaikine prasme jų argumentas gali būti bet koks realusis arba kompleksinis skaičius.</p>
-        <p>Matematikos šaka, tirianti trigonometrinių funkcijų savybes, vadinama trigonometrija.</p>
-        <p>Be šių šešių gerai žinomų trigonometrinių funkcijų, literatūroje kartais vartojamos ir kelios mažiau žinomos trigonometrinės funkcijos (versinas ir kt.).</p>
-        <p>Realaus skaičiaus argumento sinusas ir kosinusas yra periodinės, tolydžios ir be galo diferencijuojamos realiosios reikšmės funkcijos.</p>
-        <p>Likusios keturios realiųjų skaičių ašies funkcijos taip pat yra realiosios vertės, periodinės ir be galo diferencijuojamos, išskyrus suskaičiuojamą skaičių antros rūšies trūkių.</p>
-
       </section>
-
+      <div id="ggb-element"></div>
+    </section>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-      <section id="section2">
-        <h2>Kalkuliatorius</h2>
-        <hr>
-          <div id="ggb-element"></div>
-      </section>
     <br>
     <br>
     <br>
 
-
-    <div id="plot"></div>
 
   </main>
 </div>
 
 <footer class="footer">
-  <p>👍</p>
+  <a href="https://github.com/MARKUHA-220/Site-project">Github</a>
 </footer>
     
 </body>
