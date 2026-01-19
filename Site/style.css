@@ -79,7 +79,7 @@ body.dark-theme .footer {
 .layout {
   display: flex;
   max-width: 1400px;
-  margin: 20 auto;
+  margin: auto auto;
 }
 
 
@@ -180,4 +180,5 @@ body.dark-theme .footer {
   text-align: center;
   color: #54595d;
 }
+
 
