@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geogebra Kalkuliatorius</title>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/mathjs@15.1.0/lib/browser/math.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="logo"><h1>Funkcijos</h1></div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+
+    <h3>Dalyvavimas</h3>
+    <ul>
+      <li><a href="https://github.com/MARKUHA-220/Site-project/issues">Pranešti apie klaidą</a></li>
+      <li><a href="https://github.com/MARKUHA-220/Site-project">Github</a></li>
+    </ul>
+    <br>
+    <br>
+    <h3>Enciklopedija</h3>
+    <ul>
+      <li><a href="indexs.html">Enciklopedija</a></li>
+      <li><a href="geo.html">Geogebra kalkuliatorius</a></li>
+    </ul>
+    <br>
+    <br>
+    <h3>Išvaizda</h3>
+    <hr>
+    <p>Tekstas</p>
+      <ul>
+        <li>
+          <button onclick="changeTextSize(1)">A+</button>
+          <button onclick="changeTextSize(-1)">A-</button>
+        </li>
+      </ul>
+    <p>Spalva</p>
+      <ul>
+        <li>
+          <button onclick="toggleTheme()">Keisti temą</button>
+        </li>
+      </ul>
+  </aside>
+
+  <main class="content">
+
+    <h1>Video medžiaga</h1>
+    <hr>
+    <p class="subtitle">Medžiaga iš laisvosios enciklopedijos</p>
+
+    <section id="section1">
+      </section>
+      <br>
+      <h3>Funkcinė priklausomybė</h3>
+      <hr>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/watch?v=4VrfPx4o4nM"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+      <h3>Tiesinė funkcija</h3>
+      <hr>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/watch?v=AaFaqtgkUyk"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+      <h3>Funkcijos tyrimas iš grafiko</h3>
+      <hr>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/watch?v=RxYAoZWyOTs"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+      <h3>Funkcijos lyginumas</h3>
+      <hr>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/watch?v=q7uacS0nsL8"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </main>
+</div>
+
+<footer class="footer">
+  <a href="https://github.com/MARKUHA-220/Site-project">Github</a>
+</footer>
+    
+</body>
+</html>
