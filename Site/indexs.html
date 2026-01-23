@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geogebra Kalkuliatorius</title>
+    <title>Document</title>
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script src="script.js" defer></script>
+    <script src="graph.js" defer></script>
     <script src="https://unpkg.com/mathjs@15.1.0/lib/browser/math.js"></script>
     <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -29,18 +30,18 @@
     <br>
     <h3>Enciklopedija</h3>
     <ul>
-      <li><a href="indexs.html">Enciklopedija</a></li>
+      <li><a href="geo.html">Geogebra kalkuliatorius</a></li>
       <li><a href="video.html">Video vaizdai</a></li>
     </ul>
     <br>
     <br>
     <h3>Išvaizda</h3>
-    <hr>
+    <hr style="width: 50%;">
     <p>Tekstas</p>
       <ul>
         <li>
           <button onclick="changeTextSize(1)">A+</button>
-          <button onclick="changeTextSize(-1)">A-</button>
+          <button onclick="changeTextSize(-1)">A−</button>
         </li>
       </ul>
     <p>Spalva</p>
@@ -54,14 +55,303 @@
   <main class="content">
 
     <h1>Funkcijos</h1>
-    <hr style="width: 100%;">
+    <hr style="width: 50%;">
     <p class="subtitle">Medžiaga iš laisvosios enciklopedijos</p>
 
+    <nav class="toc">
+      <strong>Turinys</strong>
+      <ol>
+        <li>
+            <a href="#section1">Įvadas</a>
+        </li>
+        <li>
+            <a href="#section2">Funkcijos</a>
+            <ol>
+                <li>
+                <a href="#section2-1">Tiesinės funkcijos</a>
+                </li>
+                <li>
+                <a href="#section2-2">Atvirkštinio proporcingumo</a>
+                </li>
+                <li>
+                <a href="#section2-3">Laipsninės</a>
+                </li>
+                <li>
+                <a href="#section2-4">Šaknies</a>
+                </li>
+                <li>
+                <a href="#section2-5">Rodiklinės</a>
+                </li>
+                <li>
+                <a href="#section2-6">Logaritminės</a>
+                </li>
+                <li>
+                <a href="#section2-7">Trigonometrinės</a>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <a href="#section3">Funkcijų skaičiuotuvas</a>
+        </li>
+        <li>
+          <a href="#section4">Kita</a>
+        </li>
+          <li>
+            <a href="#section5">Šaltiniai</a>
+        </li>
+      </ol>
+    </nav>
+
+
+
     <section id="section1">
-      </section>
-      <div id="ggb-element"></div>
+      <h2>Įvadas</h2>
+      <hr style="width: 50%;">
+        <div class="infobox" style="width: 30%;">
+            <strong>Funkcijos</strong>
+            <img src="img/Trigonometric_functions_no_legend.png" alt="img">
+            <p class="caption">Trigonometrinių funkcijų grafikai: <b style="color: red;">sinusas</b>, <b style="color: rgb(47, 255, 47);">kosinusas</b>, <b style="color: blue;">tangentas</b>, <b style="color: yellowgreen;">kotangentas</b>, <b style="color: rgb(131, 131, 0);">sekantas</b>, <b style="color: blueviolet;">kosekantas</b></p>
+        </div>
+
+        <p>Trigonometrinės funkcijos yra elementarios funkcijos, istoriškai atsiradusios nagrinėjant stačiuosius trikampius ir išreiškusios šių trikampių kraštinių ilgių priklausomybę nuo smailiųjų kampų hipotenuzėje (arba, lygiaverčiai, chordų ir aukštinių priklausomybę nuo apskritimo lanko centrinio kampo). Šios funkcijos buvo plačiai pritaikytos įvairiose mokslo srityse. Tobulėjant matematikai, trigonometrinių funkcijų apibrėžimas buvo išplėstas; šiuolaikine prasme jų argumentas gali būti bet koks realusis arba kompleksinis skaičius.</p>
+        <p>Matematikos šaka, tirianti trigonometrinių funkcijų savybes, vadinama trigonometrija.</p>
+        <p>Be šių šešių gerai žinomų trigonometrinių funkcijų, literatūroje kartais vartojamos ir kelios mažiau žinomos trigonometrinės funkcijos (versinas ir kt.).</p>
+        <p>Realaus skaičiaus argumento sinusas ir kosinusas yra periodinės, tolydžios ir be galo diferencijuojamos realiosios reikšmės funkcijos.</p>
+        <p>Likusios keturios realiųjų skaičių ašies funkcijos taip pat yra realiosios vertės, periodinės ir be galo diferencijuojamos, išskyrus suskaičiuojamą skaičių antros rūšies trūkių.</p>
     </section>
+
+    <section id="section2">
+        <h2>Funkcijos</h2>
+        <hr style="width: 50%;">
+
+        <section id="section2-1">
+          <h2>Tiesinė funkcija</h2>
+          <div class="infobox" style="width: 30%;">
+              <strong>Funkcijos</strong>
+              <img src="img/Linear_functions.png" alt="img">
+              <p class="caption">Tiesinių funkcijų pavyzdžiai.</p>
+          </div>
+          <p>Tiesinė lygtis – algebrinė lygtis, kurios kiekvienas narys yra arba konstanta, arba konstantos ir vieno pirmojo laipsnio kintamojo sandauga.</p>
+          <p>Tiesinės lygtys gali turėti du arba daugiau kintamųjų. Tiesinės lygtys yra itin dažnos įvairiose matematikos šakose ir ypač taikomojoje matematikoje.</p>
+          <br>
+          <h3>Vienas kintamasis</h3>
+          <p>Tiesinė lygtis su vienu nežinomuoju <b>x</b> visada gali būt užrašoma forma</p>
+          <p><img style="width: 70px;" src="img/lin2.svg" alt="lin"></p>
+          <p>Jei <b>a ≠ 0</b>, egzistuoja tik vienas sprendinys</p>
+          <p><img style="width: 70px;" src="img/lin3.svg" alt="lin"></p>
+          <p>Jei <b>a = 0</b>, tai:</p>
+          <ul>
+            <li>jei <b>b ≠ 0</b>, lygtis neturi nė vieno sprendinio;</li>
+            <li>jei <b>b</b> taip pat lygu nuliui, bet kuris skaičius yra sprendinys.</li>
+          </ul>
+          <br>
+          <h3>Du kintamieji</h3>
+          <p>Dažnai pasitaikanti tiesinių lygčių su dviem kintamaisiais <b>x</b> ir <b>x</b> užrašymo forma yra</p>
+          <p><img style="width: 100px;" src="img/lin.svg" alt="lin"></p>
+          <p>kur <b>k</b> ir <b>b</b> nurodo konstantas (parametrus). Pavadinimo „tiesinė lygtis“ kilmė yra faktas, kad šios lygties sprendinių aibė plokštumoje sudaro tiesę.</p>
+          <p>Šioje lygtyje konstanta <b>k</b> nurodo tiesės krypties koeficientą, o pastovusis narys <b>b</b> nurodo tašką, kuriame tiesė kerta Y ašį.</p>
+          <p>Kadangi tiesinės lygties nariai negali būti sudaryti nei iš skirtingų ar vienodų kintamųjų sandaugų, nei iš kėlimo jokiu laipsniu (išskyrus 0 ir 1), nei iš kokios kitos kintamojo funkcijos, lygtys, turinčios tokius narius kaip <b>xy, x<sup>2</sup>, y<sup>1/3</sup> arba sin(x)</b> yra netiesinė.</p>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-2">
+          <h2>Atvirkštinio proporcingumo funkcija</h2>
+          <div class="infobox" style="width: 30%;" >
+              <strong>Funkcijos</strong>
+              <img src="img/Hyperbola1.jpg" alt="img">
+              <p class="caption">Kelių funkcijų grafikai:</p>
+              <p class="caption"><img style="width: 70px;" src="img/hyp.svg" alt="hyp"><img style="width: 70px;" src="img/hyp2.svg" alt="hyp"><img style="width: 70px;" src="img/hyp3.svg" alt="hyp"><img style="width: 70px;" src="img/hyp4.svg" alt="hyp"></p>
+          </div>
+          <p>Du tarpusavyje priklausomi dydžiai vadinami proporcingais, jei jų verčių santykis išlieka nepakitęs.</p>
+          <p>Matematikoje dviejų ar daugiau skaičių porų arba dydžių santykių lygybė vadinama proporcija.</p>
+          <br>
+          <p><b>Atvirkštinis proporcingumas</b> — funkcinis ryšys, kai nepriklausomo dydžio (argumento) padidėjimas sukelia proporcingą priklausomo dydžio (funkcijos) sumažėjimą.</p>
+          <p><img style="width: 180px;" src="img/hyp5.svg" alt="hyp"></p>
+          <p><b>Funkcijos savybės:</b></p>
+          <ul>
+            <p>Apibrėžimo sritis :</p>
+              <li><img style="width: 210px;" src="img/hyp6.svg" alt="hyp"></li>
+            <li><img style="width: 210px;" src="img/hyp7.svg" alt="hyp"></li>
+            <li>Funkcija yra nelyginė, nes <img style="width: 210px;" src="img/hyp8.svg" alt="hyp"></li>
+            <li>Funkcija mažėja kiekvienoje iš aibių <img style="width: 70px;" src="img/hyp9.svg" alt="hyp"> ir <img style="width: 70px;" src="img/hyp10.svg" alt="hyp"> atskirai, kai <b>k > 0</b> ir didėja kiekvienam iš jų atskirai, kai <b>k &lt 0</b></li>
+          </ul>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-3">
+          <h2>Laipsninės funkcija</h2>
+          <div class="infobox" style="width: 30%;" >
+              <strong>Funkcijos</strong>
+              <img src="img/Puissance_inverse.jpg" alt="pus">
+              <p class="caption">N eilės hiperbolės:</p>
+              <img style="width: 60px;" src="img/pus.svg" alt="pus">
+              <img style="width: 60px;" src="img/pus2.svg" alt="pus">
+              <img style="width: 60px;" src="img/pus3.svg" alt="pus">
+          </div>
+          <p><b>Laipsninė funkcija</b> yra funkcija <img style="width: 60px;" src="img/pus4.svg" alt="pus"> kur <b>a</b> (laipsninė rodyklė) yra realusis skaičius.</p>
+          <p>Laipsninės funkcijos taip pat dažnai apima funkcijas, kurių forma yra <img style="width: 60px;" src="img/pus5.svg" alt="pus"> kur <b> k </b> yra nenulinis koeficientas.</p>
+          <p>Taip pat yra sudėtingas laipsninės funkcijos apibendrinimas.</p>
+          <h3>Apibrėžimo sritis</h3>
+          <p>Teigiamų sveikųjų skaičių laipsnio rodiklių <b>a</b> atveju laipsninę funkciją galima nagrinėti visoje skaičių tiesėje, o neigiamų sveikųjų skaičių <b>a</b> atveju funkcija neapibrėžta ties nuliu (nulis yra jos singuliarinis taškas).</p>
+          <p>Nesveikojo skaičiaus laipsnio rodikliui <b>a</b> , laipsninė funkcija <b>x <sup>a</sup></b></p>
+          <p>Keista <b>n</b> grafikai yra centralizuotai simetriški kilmės taško, kuriame yra lūžio taškas, atžvilgiu. Lyginiams skaičiams <b>n</b> laipsninė funkcija yra lyginė: <img style="width: 0px;" src="img/pus6.svg" alt="pus"> jo grafikas yra simetriškas ordinačių ašies atžvilgiu.</p>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-4">
+          <h2>Laipsninės funkcija</h2>
+          <div class="infobox" style="width: 40%;" >
+              <strong>Funkcija</strong>
+              <img src="img/Square_root_0_25.jpg" alt="pus">
+              <p class="caption"></p>
+              <p>Kvadratinės šaknies funkcijos <img style="width: 120px;" src="img/cube.svg" alt="cube"> grafikas yra pusė pakreiptos parabolės vertikalia kryptimi.</p>
+          </div>
+          <p>Kvadratinės šaknies funkcijos realiųjų skaičių aibėje apibrėžimo ir reikšmių sritis – neneigiamų realiųjų skaičių aibė arba intervalas <img style="width: 50px;" src="img/cube2.svg" alt="cube"></p>
+          <p>Kvadratinės šaknies funkcija argumentui x užrašoma taip:</p>
+          <img style="width: 120px;" src="img/cube3.svg" alt="cube">
+          <p>Kvadratinės šaknies funkcija yra tolydi visiems neneigiamiems x ir diferencijuojama visiems teigiamiems x. Jei f žymi kvadratinės šaknies funkciją, tada jos išvestinė yra:</p>
+          <img style="width: 120px;" src="img/cube4.svg" alt="cube">
+          <h3>Savybės</h3>
+          <p>Šios kvadratinės šaknies funkcijos savybės galioja visiems realiesiems skaičiams x ir y:</p>
+          <ul>
+            <li><img style="width: 120px;" src="img/cube5.svg" alt="cube"></li>
+            <li><img style="width: 220px;" src="img/cube6.svg" alt="cube"></li>
+            <li><img style="width: 120px;" src="img/cube7.svg" alt="cube"></li>
+            <li><img style="width: 120px;" src="img/cube8.svg" alt="cube"> (kai y > 0)</li>
+            <li><img style="width: 120px;" src="img/cube9.svg" alt="cube"></li>
+          </ul>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-5">
+          <h2>Rodiklinė funkcija</h2>
+            <div style="width: 30%;" class="infobox">
+                <strong>Funkcija</strong>
+                <img src="img/eksp_funk.svg" alt="img">
+                <p class="caption"></p>
+            </div>
+            <p>Rodiklinė funkcija - tokios formos (vieno kintamojo funkcijoms), kur a>0 ir a≠1.</p>
+            <p>Pagrindinė rodiklinės funkcijos savybė yra ta, kad funkcijos prieaugis yra proporcingas pačios funkcijos reikšmei. Dėl to ši funkcija aprašo spartų augimą arba mažėjimą.</p>
+            <p>Rodiklinės funkcijos grafikas yra kreivė, kuri artėja prie x ašies, bet jos nekerta. Tai taikoma realiajai funkcijai su vienu realiuoju kintamuoju.</p>
+            <br>
+            <h3>Pagrindiniai rodiklinės funkcijos elementai:</h3>
+            <p>Formulė: f(x)=aˣ.</p>
+            <p><b>a (rodiklio pagrindas):</b> Jei a>1, funkcija didėja; jei 0&lt;a&lt;1, funkcija mažėja.</p>
+            <p><b>Apibrėžimo sritis:</b> visi realieji skaičiai.</p>
+            <p><b>Reikšmių sritis:</b> f(x)>0.</p>
+          </li>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-6">
+          <h2>Logaritminė funkcija</h2>
+          <div style="width: 30%;" class="infobox">
+              <strong>Funkcija</strong>
+              <img src="img/log_funk.svg" alt="img">
+              <p class="caption"></p>
+          </div>
+          <p>Logaritminė funkcija – tokios formos, kur a>0 ir a≠1.</p>
+          <p>Logaritminė funkcija apibrėžiama tik teigiamiems argumento x reikšmėms. Ji yra atvirkštinė eksponentinei funkcijai.</p>
+          <p>Logaritminės funkcijos grafikas turi vertikaliąją asimptotę ties x=0 ir kerta x ašį taške (1; 0).</p>
+          <br>
+          <h3>Pagrindiniai logaritminės funkcijos elementai:</h3>
+          <p>Formulė: f(x)=logₐx.</p>
+          <p><b>a (logaritmo pagrindas):</b> Jei a>1, funkcija didėja; jei 0&lt;a&lt;1, funkcija mažėja.</p>
+          <p><b>Apibrėžimo sritis:</b> x>0.</p>
+          </li>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+        <br>
+
+        <section id="section2-7">
+          <h2>Trigonometrinė funkcija</h2>
+          <div style="width: 30%;" class="infobox">
+              <strong>Funkcija</strong>
+              <img src="img/Periodic_sine.jpg" alt="img">
+              <p class="caption">Viršuje: Trigonometrinė funkcija</p>
+              <p>Apačioje: Sinuso ir kampo grafikas.</p>
+          </div>
+          <p>Trigonometrinės funkcijos – tai funkcijos, kurios aprašo kampų ir trikampių kraštinių santykius. Dažniausiai naudojamos: sin, cos, tg ir ctg.</p>
+          <p>Šios funkcijos yra periodinės, t. y. jų reikšmės kartojasi tam tikru intervalu.</p>
+          <p>Trigonometrinės funkcijos plačiai taikomos fizikoje, inžinerijoje ir signalų analizėje.</p>
+          <br>
+          <h3>Pagrindiniai trigonometrinių funkcijų elementai:</h3>
+          <p>Funkcijos:</p> <br>
+          
+          <p>f(x)=sin x <br> <img src="img/sin_funk.svg" alt="log"> <br><br>
+            f(x)=cos x <br> <img src="img/cos_funk.svg" alt="log"> <br><br>
+            f(x)=tg x <br> <img src="img/tan_funk.svg" alt="log"> <br><br>
+          </p>
+          <p><b>Periodas:</b> sin x ir cos x periodas yra 2π.</p>
+          <p><b>Reikšmių sritis:</b> sin x ir cos x reikšmės yra intervale [-1; 1].</p>
+          </li>
+        </section>
+
+    </section>
+
     <br>
+    <br>
+    <br>
+    <br>
+
+    <section id="section3">
+      <h2>Funkcijų skaičiuotuvas</h2>
+      <hr style="width: 50%;"><br>
+
+      <form id="form">
+        <label for="eq">Įveskite lygtį:</label>
+        <input type="text" id="eq" value="4 * sin(x) + 5 * cos(x/2)" />
+        <input type="submit" value="Draw" />
+      </form>
+      <div id="plot"></div>
+      <br>
+      <br>
+      <!-- <div id="ggb-element"></div> -->
+
+    </section>
+
     <br>
     <br>
     <br>
@@ -69,9 +359,9 @@
 
     <section id="section4">
       <h2>Kita</h2>
-      <hr style="width: 100%;"><br>
+      <hr style="width: 50%;"><br>
       <h3>Istorija</h3>
-      <hr style="width: 50%;">
+      <hr>
       <br>
       <p>Matematinį terminą „funkcija“ pirmasis 1694 m. panaudojo Gotfridas Leibnicas, apibūdindamas dydį, susietą su kreivės tam tikru tašku ar liestine. Tokios funkcijos dabar vadinamos diferencijuojamomis funkcijomis. Tokios funkcijos turi ribą ir išvestinę, kas yra diferencialinio ir integralinio skaičiavimų pagrindas.</p>
       <p>XIX amžiuje funkcijos sąvoka formalizuota bei praplėsta. XIX amžiaus pabaigoje nepriklausomai vienas nuo kito beveik tuo pat metu šiuolaikinį funkcijos formalų apibrėžimą pateikė prancūzas Peteris Dirichlė ir rusas Nikolajus Lobačevskis.</p>
@@ -87,7 +377,7 @@
       <br>
       <br>
       <h3>Kur taikomos</h3>
-      <hr style="width: 50%;">
+      <hr>
       <p>Trigonometrinės funkcijos (sinusas, kosinusas, tangentas) plačiai naudojamos moksluose ir technologijose, nes jos leidžia tiksliai aprašyti ryšį tarp kampų ir ilgių.</p>
       <p>Fizikoje jos taikomos bangų judėjimui aprašyti: garso bangos, šviesos bangos ir elektromagnetinės bangos modeliuojamos naudojant sinusines funkcijas. Pavyzdžiui, garso stiprumo svyravimai laikui bėgant dažnai vaizduojami sinuso grafiku.</p>
       <p>Inžinerijoje trigonometrinės funkcijos naudojamos skaičiuojant jėgas, veikiančias konstrukcijas. Tiltų, pastatų ar bokštų stabilumas vertinamas skaidant jėgas į horizontalias ir vertikalias dedamąsias, naudojant sinusą ir kosinusą.</p>
@@ -100,7 +390,7 @@
 
       <section id="section5">
       <h2>Šaltiniai</h2>
-      <hr style="width: 50%;"><br>
+      <hr style="width: 100%;"><br>
       <ul>
         <li><a href="https://docs.google.com/document/d/1YueBmQYjtmoQcesNrsETpF5TtFHq5IIN">Mokytojos duota medžiaga</a></li>
         <li><a href="https://mathjs.org/examples/browser/plot.html.html">Funkcijų skaičiuotuvas</a>  <a href="https://mathjs.org/examples/browser/plot.html"> (pavyzdis)</a></li>
@@ -121,5 +411,3 @@
     
 </body>
 </html>
-
-
